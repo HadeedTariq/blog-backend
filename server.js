@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 8000;
 const app = express();
 
 //& middlewares
-app.use(cors({ origin: [process.env.URL, "http://localhost:5173"] }));
+app.use(cors({ origin: ["https://blogify-blogs.vercel.app", "http://localhost:5173"] }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
